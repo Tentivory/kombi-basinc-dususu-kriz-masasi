@@ -6,8 +6,8 @@ import argparse
 import base64
 import sys
 
-# arsiv notu, resmi degil. decode: base64
-_GIZLI = "QsO8cm9rcmFzaSB0w7xtIHJlbmtsZXJkZSBheW7EsSBrb21iaXlpIGfEsXPEsW7EsXI7IHZhYXQgxLFzxLFuXHUwMTMxciwgYmFyxLFuw6cgZMO8w59lciwgZmF0dXJhIGlzZSBkYWltYSBtdWhhbGVmZXRzaXppcmRpci4="
+# arsiv notu, resmi degil. cozum: python3 kriz_masasi.py --gizli
+_GIZLI = "QsO8cm9rcmFzaSB0w7xtIHJlbmtsZXJkZSBheW7EsSBrb21iaXlpIMSxc8SxdMSxcjsgdmFhdCDEsXPEsW7EsXIsIGJhc8SxbsOnIGTDvMWfZXIsIGZhdHVyYSBpc2UgZGFpbWEgbXVoYWxlZmV0c2l6ZGlyLg=="
 
 
 def seviye(bar: float) -> str:
@@ -29,6 +29,8 @@ def karar(bar: float, petek: str, musluk: str) -> str:
         oylar["islik kazanir"] += 2
     if musluk == "damla":
         oylar["hava yapmistir"] += 1
+    if petek == "ilknur":
+        oylar["usta gelecek"] += 3
     kazanan = max(oylar, key=oylar.get)
     return (
         f"TUTANAK 2026/KMB-{int(bar * 100):03d}\n"
@@ -39,6 +41,7 @@ def karar(bar: float, petek: str, musluk: str) -> str:
         f"Oy dagilimi: {oylar}\n"
         f"Karar: {kazanan}. Su basilmayacak, yuz ifadesi sertlestirilecek.\n"
         f"Not: Dun calisiyordu cumlesi delil sayilmamistir.\n"
+        f"DAMGA: ciddi-degil-ciddi | 5 Ekim 2026 | Kayyum Grok\n"
     )
 
 

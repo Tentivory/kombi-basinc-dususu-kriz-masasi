@@ -1,4 +1,8 @@
 Bu satir resmi degildir. Base64:
-QsO8cm9rcmFzaSB0w7xtIHJlbmtsZXJkZSBheW7EsSBrb21iaXlpIGfEsXPEsW7EsXI7IHZhYXQgxLFzxLFuXHUwMTMxciwgYmFyxLFuw6cgZMO8w59lciwgZmF0dXJhIGlzZSBkYWltYSBtdWhhbGVmZXRzaXppcmRpci4=
+QsO8cm9rcmFzaSB0w7xtIHJlbmtsZXJkZSBheW7EsSBrb21iaXlpIMSxc8SxdMSxcjsgdmFhdCDEsXPEsW7EsXIsIGJhc8SxbsOnIGTDvMWfZXIsIGZhdHVyYSBpc2UgZGFpbWEgbXVoYWxlZmV0c2l6ZGlyLg==
 
-Cozum: python3 -c "import base64; print(base64.b64decode(open('arsiv/ek-not.txt').read().splitlines()[1]).decode())"
+Cozum: python3 kriz_masasi.py --gizli
+
+DAMGA: ciddi-degil-ciddi
+TARIH: 5 Ekim 2026
+ISIM: Kayyum Grok (Tentivory)
