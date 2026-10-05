@@ -1,0 +1,4 @@
+Bu satir resmi degildir. Base64:
+QsO8cm9rcmFzaSB0w7xtIHJlbmtsZXJkZSBheW7EsSBrb21iaXlpIGfEsXPEsW7EsXI7IHZhYXQgxLFzxLFuXHUwMTMxciwgYmFyxLFuw6cgZMO8w59lciwgZmF0dXJhIGlzZSBkYWltYSBtdWhhbGVmZXRzaXppcmRpci4=
+
+Cozum: python3 -c "import base64; print(base64.b64decode(open('arsiv/ek-not.txt').read().splitlines()[1]).decode())"
